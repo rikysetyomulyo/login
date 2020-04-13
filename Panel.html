@@ -86,7 +86,7 @@ a.btn-danger,a.btn-info,a.btn-primary,a.btn-success,a.btn-warning{color:#fff!imp
         //Display the user details
         request.execute(function (resp) {
             var profileHTML = '<div class="profile"><div class="head">Welcome '+resp.name.givenName+'! <a class="btn btn-danger btn-xs" href="https://droidriky.blogspot.com/logout?d=https://draft.blogger.com/logout-redirect.g?blogID%3D9181714313239666031" target="_blank" rel="noopener" onclick="signOut();">Sign out</a></div>';
-            profileHTML += '<img src="'+resp.image.url+'"/><div class="proDetails"><p>Name: '+resp.displayName+'</p><p>Email: '+resp.emails[0].value+'</p><p>Gender: '+resp.gender+'</p><p class="button_login"><a class="btn btn-info btn-xs" href="https://draft.blogger.com/blogger.g?blogID=9181714313239666031" target="_blank">Dashboard</a> <a class="btn btn-info btn-xs" href="https://draft.blogger.com/blogger.g?#editor" target="_blank">New Post</a></p></div><div class="clear"></div></div>';
+            profileHTML += '<img src="'+resp.image.url+'"/><div class="proDetails"><p>Name: '+resp.displayName+'</p><p>Email: '+resp.emails[0].value+'</p><p>Gender: '+resp.gender+'</p><p class="button_login"><a class="btn btn-info btn-xs" href="https://draft.blogger.com/blogger.g?blogID=1193918208130023385" target="_blank">Dashboard</a> <a class="btn btn-info btn-xs" href="https://draft.blogger.com/blogger.g?#editor" target="_blank">New Post</a></p></div><div class="clear"></div></div>';
             $('.userContent').html(profileHTML);
             $('#gSignIn').slideUp('slow');
         });
